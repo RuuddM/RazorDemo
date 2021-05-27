@@ -14,6 +14,9 @@ namespace RazorFusionchartApp.Pages {
             _logger = logger;
         }
 
+        // create a public property. OnGet method() set the chart configuration json in this property.
+        // When the page is being loaded, OnGet method will be  invoked
+        public string ChartJson { get; internal set; }
         public void OnGet() {
 
         }
